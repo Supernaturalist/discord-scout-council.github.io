@@ -4,7 +4,7 @@
 	<meta name="title" content="{{ .Title }}">
 	<meta
 		name="description"
-		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Tristan Partin's personal website and blog.{{ end }}"
+		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Owen Salter's personal website{{ end }}"
 	>
 
 	<meta property="og:type" content="website">
@@ -18,7 +18,7 @@
 	<meta property="og:image:alt" content="Astronaut with beer sitting in lawn chair looking at the Earth from the Moon">
 	<meta
 		property="og:description"
-		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Tristan Partin's personal website and blog.{{ end }}"
+		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Owen Salter's personal website{{ end }}"
 	>
 
 	{{ partial "head_includes.html" . }}
