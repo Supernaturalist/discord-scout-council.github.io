@@ -4,7 +4,7 @@ packages:
   - hugo
   - rsync
 sources:
-  - https://git.sr.ht/~tristan957/tristan.partin.io
+  - https://git.sr.ht/~muirrum/devosmium.xyz
   - https://git.sr.ht/~sircmpwn/openring
 environment:
   kronos: deploy@kronos.devosmium.xyz
@@ -17,7 +17,7 @@ tasks:
       cd openring
       go build
   - build: |
-      cd tristan.partin.io
+      cd devosmium.xyz
       ../openring/openring \
         -s https://drewdevault.com/feed.xml \
         -s https://emersion.fr/blog/rss.xml \
@@ -26,6 +26,6 @@ tasks:
         > layouts/partials/webring-out.html
       hugo
   - deploy: |
-      cd tristan.partin.io
+      cd devosmium.xyz
       rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $kronos:/var/www/devosmium.xyz
       # rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $ec2_box:/var/www/tristan.partin.io
