@@ -27,5 +27,5 @@ tasks:
       hugo
   - deploy: |
       cd devosmium.xyz
-      rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $kronos:/var/www/devosmium.xyz
+      rsync --delete -avz --exclude ".well-known" -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $kronos:/var/www/devosmium.xyz
       # rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $ec2_box:/var/www/tristan.partin.io
