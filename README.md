@@ -1,4 +1,4 @@
-[![builds.sr.ht status](https://builds.sr.ht/~tristan957/tristan.partin.io/.build.yml.svg)](https://builds.sr.ht/~tristan957/tristan.partin.io/.build.yml?)
+[![builds.sr.ht status](https://builds.sr.ht/~muirrum/devosmium.xyz/.build.yml.svg)](https://builds.sr.ht/~muirrum/devosmium.xyz/.build.yml?)
 
 # devosmium.xyz
 
