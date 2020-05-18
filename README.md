@@ -1,15 +1,13 @@
 [![builds.sr.ht status](https://builds.sr.ht/~tristan957/tristan.partin.io/.build.yml.svg)](https://builds.sr.ht/~tristan957/tristan.partin.io/.build.yml?)
 
-# tristan.partin.io
+# devosmium.xyz
 
-This is code used to create the [tristan.partin.io](https://tristan.partin.io).
+This is code used to create the [devosmium.xyz](https://devosmium.xyz).
 
 ## Comments
 
-The site itself will function without JavaScript enabled. It has the ability to
-show comments on the page using [utteranc.es](https://utteranc.es), but
-otherwise comments can be emailed to my
-[public inbox](mailto:tristan957/public-inbox@lists.sr.ht).
+The site itself will function without JavaScript enabled. Comments can be emailed to my
+[public inbox](mailto:muirrum/public-inbox@lists.sr.ht).
 
 ## Theme
 

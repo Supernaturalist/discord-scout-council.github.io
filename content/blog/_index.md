@@ -1,5 +1,5 @@
 ---
-title: Tristan Partin's Blog
+title: Muirrum's Ramblings
 ---
 
-This is where I do the blogging thing, and some times it is interesting.
+Sometimes I post about things, but not always

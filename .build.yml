@@ -7,11 +7,11 @@ sources:
   - https://git.sr.ht/~tristan957/tristan.partin.io
   - https://git.sr.ht/~sircmpwn/openring
 environment:
-  ec2_box: ubuntu@partin.io
+  kronos: deploy@kronos.devosmium.xyz
   # linode_instance: root@
 secrets:
-  - 7479e438-adaa-42f6-a774-def5194e2ae3
-  - 823512b1-af97-446c-bff3-4f52ea414014
+  - a88c3ffc-9bb0-451e-bf59-ef6198da6754
+  - 0467a7c3-16d9-491c-9874-807bce4f2616
 tasks:
   - openring: |
       cd openring
@@ -21,13 +21,11 @@ tasks:
       ../openring/openring \
         -s https://drewdevault.com/feed.xml \
         -s https://emersion.fr/blog/rss.xml \
-        -s https://blog.golang.org/feed.atom \
         -s https://blog.rust-lang.org/feed.xml \
-        -s https://blog.mozilla.org/feed/ \
         < include/webring-in.html \
         > layouts/partials/webring-out.html
       hugo
   - deploy: |
       cd tristan.partin.io
-      rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ~/.ssh/personal-ec2.pem" public/ $ec2_box:/var/www/tristan.partin.io
+      rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ~/.ssh/personal-ec2.pem" public/ $kronos:/var/www/devosmium.xyz
       # rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $ec2_box:/var/www/tristan.partin.io
