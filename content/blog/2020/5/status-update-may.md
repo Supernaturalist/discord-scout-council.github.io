@@ -1,7 +1,7 @@
 ---
 title: "Status Update: May 2020"
 date: 2020-05-18T15:45:15-04:00
-draft: true
+draft: false
 series:
     - status
 categories:
