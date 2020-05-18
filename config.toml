@@ -1,4 +1,4 @@
-baseURL = "https://tristan.partin.io"
+baseURL = "https://devosmium.xyz"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 title = "Muirrum"
@@ -6,6 +6,8 @@ static = ["static"]
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
+
+summary = "Owen Salter's personal website"
 
 [taxonomies]
   category = "categories"
