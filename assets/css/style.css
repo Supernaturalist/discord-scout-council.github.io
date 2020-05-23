@@ -1,16 +1,15 @@
 :root {
-	--color: black;
-	--main-bg-color: #FFFAF0;
-	--consistent-link-color: blue;
-	--content-metadata-color: #484848;
-	--box-shadow-container-color: #CCCCCC;
-	--raised-backgroud-color: white;
-	--secondary-accent-color: #77216F;
+	--color: white;
+	--main-bg-color: #2C2F33;
+	--consistent-link-color: #378AD3;
+	--content-metadata-color: #d4d4d4;
+	--box-shadow-container-color: #222222;
+	--raised-backgroud-color: #393939;
 }
 
 [site-theme="dark"] {
 	--color: white;
-	--main-bg-color: #2d2d2d;
+	--main-bg-color: #2C2F33;
 	--consistent-link-color: #378AD3;
 	--content-metadata-color: #d4d4d4;
 	--box-shadow-container-color: #222222;
@@ -218,7 +217,7 @@ ul.contact-list > li:last-child {
 nav {
 	display: flex;
 	justify-content: center;
-	background-color: #393939;
+	background-color: #2C2F33;
 	width: 100%;
 	border-top: 3px solid #7289DA;
 	box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.25);

@@ -15,42 +15,6 @@
 			<a class="consistent-link" href="https://github.com/Discord-Scout-Council" target="_blank" rel="noopener noreferrer">Discord-Scout-Council</a>
 		</li>
 	</ul>
-	<script text="text/javascript">
-		let isDarkModePreferred = isDarkModeEnabled();
-
-		function switchTheme(theme) {
-			if (theme === "dark") {
-				document.documentElement.setAttribute("site-theme", "dark");
-				window.localStorage.setItem("site-theme", "dark");
-			} else {
-				document.documentElement.setAttribute("site-theme", "light");
-				window.localStorage.setItem("site-theme", "light");
-			}
-		}
-
-		function overrideTheme(button) {
-			if (!isDarkModePreferred) {
-				isDarkModePreferred = true;
-				this.innerHTML = "Light Theme";
-				switchTheme("dark");
-			} else {
-				isDarkModePreferred = false;
-				this.innerHTML = "Dark Theme";
-				switchTheme("light");
-			}
-		}
-
-		switchTheme(isDarkModePreferred ? "dark" : "light");
-
-		const themeButton = document.createElement("button");
-		themeButton.id = "theme-btn";
-		themeButton.classList.add("btn");
-		themeButton.innerHTML = isDarkModePreferred ? "Light Theme" : "Dark Theme";
-		themeButton.onclick = overrideTheme;
-		overrideTheme.bind(themeButton);
-
-		document.getElementById("social").insertAdjacentElement("afterend", themeButton);
-	</script>
 	<div class="sidebar-section">
 		<div class="sidebar-section-header">License</div>
 		<p class="sidebar-paragraph">
