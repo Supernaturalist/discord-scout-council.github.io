@@ -4,18 +4,18 @@
 	<meta name="title" content="{{ .Title }}">
 	<meta
 		name="description"
-		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Owen Salter's personal website{{ end }}"
+		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Discord Scout Council{{ end }}"
 	>
 
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ .Title }}">
 	<meta property="og:url" content="{{ .Permalink }}">
-	{{ $siteImage := resources.Get "images/site-image.jpg" | fingerprint }}
+	{{ $siteImage := resources.Get "images/profile.png" | fingerprint }}
 	<meta property="og:image" content="{{ $siteImage.Permalink }}">
-	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:type" content="image/png">
 	<meta
 		property="og:description"
-		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Owen Salter's personal website{{ end }}"
+		content="{{ if .Summary }}{{ .Summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Discord Scout Council{{ end }}"
 	>
 
 	{{ partial "head_includes.html" . }}
