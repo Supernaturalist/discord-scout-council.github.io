@@ -4,9 +4,6 @@
       <h1 id="content-title">{{ .Title }}</h1>
       <div class="content-metadata">
         <div>
-          Published {{ .Date.Format "2006-01-02" }} on
-          <a class="content-metadata" href="/blog">Owen's blog</a>
-          —
           <a class="content-metadata" href="{{ .Permalink }}">Permalink</a>
           <br />
           Last modifed at {{ .Lastmod }}
@@ -17,14 +14,6 @@
         {{ .Content }}
       </div>
     </article>
-    <section class="box-shadow-container">
-      Have a comment or question on one of my posts? Start a discussion in my
-      <a class="consistent-link" href="https://lists.sr.ht/~muirrum/public-inbox" target="_blank" rel="noreferrer noopener">
-      public inbox</a>
-      by sending an email to <a class="consistent-link" href="mailto:~muirrum/public-inbox@lists.sr.ht?Subject=Re: {{ .Title }}">
-        ~muirrum/public-inbox@lists.sr.ht</a>. If you are unfamiliar with mailing lists, start with
-      <a class="consistent-link" href="https://man.sr.ht/lists.sr.ht/etiquette.md" target="_blank" rel="noreferrer noopener">mailing list etiquette</a>.
-      Otherwise just shoot me an email to my address which is linked in the sidebar.
-    </section class="box-shadow-container">
+    
   </section>
 {{ end }}

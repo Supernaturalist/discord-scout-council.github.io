@@ -220,7 +220,7 @@ nav {
 	justify-content: center;
 	background-color: #393939;
 	width: 100%;
-	border-top: 3px solid #F48024;
+	border-top: 3px solid #7289DA;
 	box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.25);
 }
 
@@ -336,7 +336,7 @@ nav > ul > li > a:hover {
 	box-shadow: 4px 4px 4px 2px var(--box-shadow-container-color);
 	border-radius: 3px;
 	background-color: var(--raised-backgroud-color);
-	border-top: 3px #F48024 solid;
+	border-top: 3px #7289DA solid;
 }
 
 #resume {
