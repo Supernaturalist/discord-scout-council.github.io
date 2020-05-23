@@ -4,8 +4,7 @@ packages:
   - hugo
   - rsync
 sources:
-  - https://git.sr.ht/~muirrum/devosmium.xyz
-  - https://git.sr.ht/~sircmpwn/openring
+  - https://github.com/Discord-Scout-Council/discord-scout-council.github.io.git
 environment:
   kronos: deploy@kronos.devosmium.xyz
   # linode_instance: root@
@@ -13,19 +12,10 @@ secrets:
   - a88c3ffc-9bb0-451e-bf59-ef6198da6754
   - 0467a7c3-16d9-491c-9874-807bce4f2616
 tasks:
-  - openring: |
-      cd openring
-      go build
   - build: |
-      cd devosmium.xyz
-      ../openring/openring \
-        -s https://drewdevault.com/feed.xml \
-        -s https://emersion.fr/blog/rss.xml \
-        -s https://blog.rust-lang.org/feed.xml \
-        < include/webring-in.html \
-        > layouts/partials/webring-out.html
+      cd discord-scout-council.github.io
       hugo
   - deploy: |
-      cd devosmium.xyz
-      rsync --delete -avz --exclude ".well-known" -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $kronos:/var/www/devosmium.xyz
+      cd discord-scout-council.github.io
+      rsync --delete -avz --exclude ".well-known" -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $kronos:/var/www/dscsite
       # rsync --delete -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" public/ $ec2_box:/var/www/tristan.partin.io
