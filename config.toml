@@ -1,13 +1,13 @@
-baseURL = "https://devosmium.xyz"
+baseURL = "https://dsc.devosmium.xyz"
 languageCode = "en-US"
 defaultContentLanguage = "en"
-title = "Muirrum"
+title = "Discord Scout Council"
 static = ["static"]
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 
-summary = "Owen Salter's personal website"
+summary = "Discord Scout Council"
 
 [taxonomies]
   category = "categories"
